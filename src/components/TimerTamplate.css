@@ -1,0 +1,17 @@
+.timerTemplate{
+    height: 150px;
+    width: 150px;
+    padding: 10px 0px;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.845);
+    font-size: xx-large;
+    font-weight: 700;
+    background-image: linear-gradient(to top right, rgba(211, 108, 108, 0.299), rgba(95, 164, 214, 0.923), rgba(94, 183, 238, 0.923), rgba(188, 216, 234, 0.923));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+p{    
+    color: rgba(255, 255, 255, 0.718);
+}

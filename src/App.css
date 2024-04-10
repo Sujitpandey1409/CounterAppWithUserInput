@@ -1,0 +1,32 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(108, 168, 211, 0.923), rgba(95, 164, 214, 0.923), rgba(79, 161, 220, 0.923), rgba(91, 162, 213, 0.923));
+}
+.appContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.timerTemplateContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+h1{
+  font-size: xxx-large;
+  color: white;
+  font-family: circular;
+  span{
+    color: blueviolet;
+  }
+}
+
