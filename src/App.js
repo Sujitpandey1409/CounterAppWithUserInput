@@ -65,7 +65,7 @@ function App() {
     const minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((time % (1000 * 60)) / 1000);
 
-    return [days,hours,minutes,seconds];
+    return [{value:days, type:'Day(s)'},{value:hours, type:'Hour(s)'},{value:minutes, type:'Minute(s)'},{value:seconds, type:'Second(s)'}];
   };
 
   
@@ -77,7 +77,7 @@ function App() {
         <Button onClick={onClick} children={buttonState}/>
         <div className='timerTemplateContainer'>
           {formatTime(countdown).map((e,i)=>
-          <TimerTamplate value={e} key={i} timeType={'Days'} />
+          <TimerTamplate value={e.value} key={i} timeType={e.type} />
           )}</div>
       </div>
     </div>
